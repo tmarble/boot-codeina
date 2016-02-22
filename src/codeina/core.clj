@@ -27,3 +27,7 @@
 (defmethod get-reader :clojure
   [options]
   (resolve-sym 'codeina.reader.clojure/read-namespaces))
+
+(defmethod get-reader :cljc
+  [options]
+  (resolve-sym 'codeina.reader.cljc/read-namespaces))

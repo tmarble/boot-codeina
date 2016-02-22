@@ -26,16 +26,17 @@
    o target  OUTDIR      str "The output directory."
    n root    ROOTDIR     src "The project root directory."
    u src-uri SRCURI      str "Source code uri"
+   p src-uri-prefix SRCURIPREFIX      str "Source code uri prefix (for line anchors)"
    w writer  WRITER      kw "Documentation writer."
    r reader  READER      kw "Source reader."]
   (fn [next-handler]
     (fn [fileset]
       (let [options (merge +defaults+ *opts*)
             reader-fn (core/get-reader options)
-            writter-fn (core/get-writer options)
+            writer-fn (core/get-writer options)
             root (:root options)
             namespaces (->> (apply reader-fn sources)
                             (utils/ns-filter include exclude)
                             (utils/add-source-paths root sources))]
-        (writter-fn (assoc options :namespaces namespaces)))
+        (writer-fn (assoc options :namespaces namespaces)))
       (next-handler fileset))))
