@@ -16,7 +16,7 @@
   '[adzerk.bootlaces :refer :all])
 
 (def +version+
-  "0.2.0-SNAPSHOT")
+  "0.2.1-SNAPSHOT")
 
 (def +description+
   "A tool for generating API documentation from Clojure")
@@ -29,7 +29,7 @@
        :description +description+
        :url         "https://github.com/tmarble/boot-codeina"
        :license     {"Eclipse Public License" "http://www.eclipse.org/legal/epl-v10.html"}
-       :scm         {:url "https://github.com/funcool/boot-codeina"}}
+       :scm         {:url "https://github.com/tmarble/boot-codeina"}}
  apidoc {:version +version+
          :title "Boot-Codeina"
          :sources #{"src"}
