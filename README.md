@@ -1,7 +1,7 @@
 # boot-codeina
 
 ```clojure
-[funcool/boot-codeina "0.1.0-SNAPSHOT"]
+[funcool/boot-codeina "0.2.0-SNAPSHOT"]
 ```
 
 Tasks for generate beautiful api reference documentation for the [boot Clojure build tool][1]
@@ -12,7 +12,7 @@ Tasks for generate beautiful api reference documentation for the [boot Clojure b
 Add `boot-codeina` to your `build.boot` dependencies and `require` the namespace:
 
 ```clj
-(set-env! :dependencies '[[funcool/boot-codeina "0.1.0-SNAPSHOT" :scope "test"]])
+(set-env! :dependencies '[[funcool/boot-codeina "0.2.0-SNAPSHOT" :scope "test"]])
 (require '[funcool.boot-codeina :refer :all])
 
 (task-options!
