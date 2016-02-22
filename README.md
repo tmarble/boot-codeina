@@ -1,7 +1,9 @@
 # boot-codeina
 
+**NOTE**: this is a fork of https://github.com/funcool/boot-codeina
+
 ```clojure
-[funcool/boot-codeina "0.2.1-SNAPSHOT"]
+[net.info9/boot-codeina "0.2.1-SNAPSHOT"]
 ```
 
 Tasks for generate beautiful api reference documentation for the [boot Clojure build tool][1]
@@ -12,7 +14,7 @@ Tasks for generate beautiful api reference documentation for the [boot Clojure b
 Add `boot-codeina` to your `build.boot` dependencies and `require` the namespace:
 
 ```clj
-(set-env! :dependencies '[[funcool/boot-codeina "0.2.1-SNAPSHOT" :scope "test"]])
+(set-env! :dependencies '[[net.info9/boot-codeina "0.2.1-SNAPSHOT" :scope "test"]])
 (require '[funcool.boot-codeina :refer :all])
 
 (task-options!
